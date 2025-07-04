@@ -10,7 +10,7 @@ if ! docker image inspect "$CONTAINER_NAME" &> /dev/null; then
 fi
 
 docker run -it --rm \
-    -v "$SCRIPT_DIR":/kaeru \
+    -v "$SCRIPT_DIR":/kaeru:z \
     -w /kaeru \
     "$CONTAINER_NAME" \
     bash
