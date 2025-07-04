@@ -178,6 +178,12 @@ menu "Device Support"
         default n
         help
           Say Y if you want to include support for Volla Phone 22/22 Pro
+
+    config DUPE_REL
+        bool "Support iPhone 15 Pro Max"
+        default n
+        help
+          Say Y if you want to include support for iPhone 15 Pro Max
 endmenu
 
 menu "SoC Support"
@@ -189,6 +195,9 @@ menu "SoC Support"
 
     config MEDIATEK_MT6750
         bool "MediaTek MT6750 SoC"
+
+    config MEDIATEK_MT6753
+        bool "MediaTek MT6753 SoC"
 
     config MEDIATEK_MT6757
         bool "MediaTek MT6757 SoC"
